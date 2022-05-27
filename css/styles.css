@@ -1,0 +1,122 @@
+/* Importo 2 fuentes de Google */
+@import url('https://fonts.googleapis.com/css2?family=Koulen&family=Lobster&family=Roboto&display=swap');
+/* Realizo un seteo general de Margen y padding en 0 */
+*{
+    margin: 0px;
+    padding: 0px;
+}
+strong{
+    text-transform: uppercase;
+}
+body{
+    height:100%;
+}
+/* Defino el estilo del Header y en Nav */
+header{
+    background-color: white;
+    width: 100%;
+    height: 71px;
+    position: fixed;
+    top: 0px;
+}
+.header__nav {
+    list-style: none;
+    font-size: 0;
+    margin-inline-start: 200px;
+    margin-bottom: 2vw;
+    text-align:center;
+}
+.header__img{
+    position: fixed;
+    top: -5px;
+    left: 10px;
+}
+.header__item{
+    display: inline;
+}
+.header__btm{
+    display: inline-block;
+    font-family: Lobster;
+    font-size: 25px;
+    text-decoration: none;
+    color: black;
+    padding: 12px;
+}
+.header__btm:hover{
+    background-color: black;
+    color: white;
+}
+/* Definiciones del Bloque Main */
+main{
+    margin-top: 100px;
+    height:120vh;
+    font-family: Roboto;
+    background-image: linear-gradient(white, blue);
+}
+.main__titulo1{
+    text-align: center;
+    margin-top: 50px;
+    margin-bottom: 50px;
+}
+.main__titulo1--margen{
+    text-align: center;
+    margin-top: 150px;
+    margin-bottom: 50px;
+}
+.main__subtitulo{
+    text-align: center;
+    color: white;
+    margin-bottom: 30px;
+    margin-inline: 70px;
+}
+.main__img{
+    text-align: center;
+    margin-bottom: 50px;
+}
+.main__parrafo{
+    text-align:center;
+    margin-top: 20px;
+    margin-bottom: 20px;
+    margin-left: 5%;
+    margin-right: 5%;
+}
+.main__media{
+    display: block;
+    margin: 0 auto;
+}
+/* Definiciones del Footer */
+footer{
+    justify-content: center;
+    width:100%; 
+    position:sticky; 
+    bottom:0; 
+    left:0;
+    padding-top: 5px;
+    padding-bottom: 5px;
+    background-color: blue;
+    font-family: Roboto;
+    text-align: center;
+}
+.footer__nav{
+    display: inline-block;
+}
+.footer__titulo{
+    display: inline-block;
+    color: gold;
+    margin-right: 35px;
+}
+.footer__lista{
+    display: inline-block;
+    list-style-type: none;
+    justify-content:center;
+}
+.footer__item{
+    display: inline-block;
+    padding-left: 20px;
+    padding-right: 20px;
+}
+.footer__btm{
+    font-size: small;
+    text-decoration: none;
+    color: white;
+}
