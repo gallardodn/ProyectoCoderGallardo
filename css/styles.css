@@ -9,38 +9,33 @@ strong{
     text-transform: uppercase;
 }
 body{
-    height:100%;
+    display: grid;
+    height: 100vh;
+    grid-template-columns: 1fr;
+    grid-template-rows:76px 1fr 35px;
 }
 /* Defino el estilo del Header y en Nav */
 header{
     background-color: white;
-    width: 100%;
-    height: 71px;
-    position: fixed;
-    top: 0px;
 }
 .header__nav {
+    display: flex;
+    flex-flow: row nowrap;
+    justify-content:center;
+    align-items:center;
     list-style: none;
     font-size: 0;
-    margin-inline-start: 200px;
-    margin-bottom: 2vw;
-    text-align:center;
 }
-.header__img{
-    position: fixed;
-    top: -5px;
-    left: 10px;
-}
-.header__item{
-    display: inline;
+.header__lista{
+    display: flex;
+    flex-flow: row nowrap;
 }
 .header__btm{
-    display: inline-block;
     font-family: Lobster;
-    font-size: 25px;
+    font-size:24px;
     text-decoration: none;
     color: black;
-    padding: 12px;
+    padding: 21px;
 }
 .header__btm:hover{
     background-color: black;
@@ -48,10 +43,9 @@ header{
 }
 /* Definiciones del Bloque Main */
 main{
-    margin-top: 100px;
-    height:120vh;
     font-family: Roboto;
     background-image: linear-gradient(white, blue);
+    overflow-y: auto;
 }
 .main__titulo1{
     text-align: center;
@@ -86,11 +80,9 @@ main{
 }
 /* Definiciones del Footer */
 footer{
+    display: flex;
     justify-content: center;
     width:100%; 
-    position:sticky; 
-    bottom:0; 
-    left:0;
     padding-top: 5px;
     padding-bottom: 5px;
     background-color: blue;
