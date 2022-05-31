@@ -20,33 +20,33 @@
         </nav>
     </header>
     <main>
-        <fieldset>
+        <fieldset class="main_field">
         <legend>Envia tus comentarios</legend>
-            <form action="contactos.html" method="get">
+            <form class="main__form" action="contactos.html" method="get">
              <div>
-                 <label for="nombre">Nombre: </label><input type="text" name="nombre" id="nombre">
+                 <label for="nombre">Nombre: </label><input class="main__input" type="text" name="nombre" id="nombre">
              </div>
              <div>
-                 <label for="apellido">Apellido: </label><input type="text" name="apellido" id="apellido">
+                 <label for="apellido">Apellido: </label><input class="main__input" type="text" name="apellido" id="apellido">
              </div>
              <div>
                  <label for="estado">Estado Civil:</label>
-                    <select name="estado" id="estado">
+                    <select class="main__inputotrs" name="estado" id="estado">
                      <option value="soltero" selected>Soltero</option>
                      <option value="casado">Casado</option>
                  </select>
               </div>
-             <div>Desea recibir Novedades? <input type="checkbox" name="" id=""></div>
+             <div>Desea recibir Novedades? <input class="main__inputotrs" type="checkbox" name="" id=""></div>
              <div>
-                 <label for="email">Email: </label><input type="email" name="email" id="email" required>
+                 <label for="email">Email: </label><input class="main__input" type="email" name="email" id="email" required>
              </div>
              <div>
                  <label for="mensaje">Mensaje:</label><br>
-                 <textarea name="texto" id="mensaje" cols="30" rows="10"></textarea>
+                 <textarea class="main__input" name="texto" id="mensaje" cols="30" rows="10"></textarea>
              </div>
              <div>
-                 <input type="reset" value="Limpiar Formularaio">
-                 <input type="submit" value="Enviar Formulario">
+                 <input class="main__inputotrs" type="reset" value="Limpiar Formularaio">
+                 <input class="main__inputotrs" type="submit" value="Enviar Formulario">
              </div>
             </form>
     </fieldset>
