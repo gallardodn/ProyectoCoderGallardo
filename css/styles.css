@@ -12,7 +12,7 @@ body{
     display: grid;
     height: 100vh;
     grid-template-columns: 1fr;
-    grid-template-rows:76px 1fr 35px;
+    grid-template-rows: auto 1fr auto;
 }
 /* Defino el estilo del Header y en Nav */
 header{
@@ -28,11 +28,13 @@ header{
 }
 .header__lista{
     display: flex;
-    flex-flow: row nowrap;
+    justify-content: center;
+    align-items:center;
+    flex-flow: row wrap;
 }
 .header__btm{
     font-family: Lobster;
-    font-size:24px;
+    font-size:2rem;
     text-decoration: none;
     color: black;
     padding: 21px;
@@ -48,11 +50,13 @@ main{
     overflow-y: auto;
 }
 .main__titulo1{
+    font-size:5vw;
     text-align: center;
     margin-top: 50px;
     margin-bottom: 50px;
 }
 .main__titulo1--margen{
+    font-size:7vmin;
     text-align: center;
     margin-top: 150px;
     margin-bottom: 50px;
@@ -111,4 +115,46 @@ footer{
     font-size: small;
     text-decoration: none;
     color: white;
+}
+
+/* Inicio de Media Querry */
+@media screen and (max-width: 880px) {
+    .header__nav{
+        flex-flow: column wrap;
+    }
+    .main__img img{
+        width: 480px;
+    }
+    .footer__titulo{
+        margin-right: 0px;
+    }
+    
+}
+@media screen and (max-width:768px) {
+    footer {
+        flex-flow: column wrap;
+    }
+    .main__img img{
+        width: 380px;
+    }
+    .header__btm{
+        font-size:1.5rem;
+        padding: 0px;
+        padding-left: 8px;
+        padding-right: 8px;
+    }
+}
+
+@media screen and (max-width:688px) {
+    .header__btm{
+        font-size:1.3rem;
+        padding: 0px;
+        padding-left: 5px;
+        padding-right: 5px;
+    }
+    .footer__item{
+        padding-left: 8px;
+        padding-right: 8px;
+    }
+
 }
