@@ -50,6 +50,7 @@ header{
 /* Definiciones del Bloque Main */
 main{
     grid-area: Medio;
+    justify-content: center;
     font-family: Roboto;
     background-image: linear-gradient(white, blue);
     overflow-y: auto;
@@ -63,7 +64,7 @@ main{
 .main__titulo1--margen{
     font-size:7vmin;
     text-align: center;
-    margin-top: 150px;
+    margin-top: 80px;
     margin-bottom: 50px;
 }
 .main__titulo2{
@@ -78,9 +79,24 @@ main{
     margin-bottom: 30px;
     margin-inline: 70px;
 }
+
+/* Animacion de Imagen Hero */
 .main__img{
-    text-align: center;
     margin-bottom: 50px;
+    height: 279px;
+    width: 600px;
+    margin: 15px auto 40px;
+    animation-duration: 12s;
+    animation-name: imagenes;
+    animation-iteration-count: infinite;
+    background-image:url("/assets/sol.gif");
+    background-size: 100%;
+}
+@keyframes imagenes {
+    0% { opacity: 0;}
+    10% { opacity: 1;}
+    90% { opacity: 1;}
+    100% {opacity: 0;}
 }
 .main__parrafo{
     text-align:center;
@@ -177,8 +193,9 @@ footer{
     .header__nav{
         flex-flow: column wrap;
     }
-    .main__img img{
+    .main__img {
         width: 480px;
+        height: 223px;
     }
     .footer__titulo{
         margin-right: 0px;
@@ -196,8 +213,9 @@ footer{
     footer {
         flex-flow: column wrap;
     }
-    .main__img img{
+    .main__img{
         width: 380px;
+        height: 177px;
     }
     .header__btm{
         font-size:1.5rem;
