@@ -1,0 +1,25 @@
+{
+  "name": "comision-36360-sass-node",
+  "version": "1.0.0",
+  "description": "Iniciando SASS en mi proyecto",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "build-css": "node-sass --include-path scss estilos_sass/main.scss css/main.css",
+    "watch-css": "nodemon -e scss -x \"npm run build-css\""
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/gallardodn/ProyectoCoderGallardo.git"
+  },
+  "author": "Gallardo Diego",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/gallardodn/ProyectoCoderGallardo/issues"
+  },
+  "homepage": "https://github.com/gallardodn/ProyectoCoderGallardo#readme",
+  "devDependencies": {
+    "node-sass": "^7.0.1",
+    "nodemon": "^2.0.16"
+  }
+}
