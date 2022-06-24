@@ -15,9 +15,7 @@ body {
   height: 100vh;
   grid-template-columns: 15% 1fr;
   grid-template-rows: auto 1fr auto;
-  grid-template-areas: "Cabecera Cabecera"
- "Medio Medio"
- "Pie Pie"; }
+  grid-template-areas: "Cabecera Cabecera" "Medio Medio" "Pie Pie"; }
 
 /*Hago un Body con Grid distinto para la pagina Productos, para agregar menu lateral */
 .body__productos {
@@ -25,9 +23,7 @@ body {
   height: 100vh;
   grid-template-columns: 15% 1fr;
   grid-template-rows: auto 1fr auto;
-  grid-template-areas: "Cabecera Cabecera"
- "Nav Medio"
- "Pie Pie"; }
+  grid-template-areas: "Cabecera Cabecera" "Nav Medio" "Pie Pie"; }
 
 /* Defino el estilo del Header y en Nav */
 header {
@@ -109,7 +105,7 @@ header {
     animation-duration: 12s;
     animation-name: imagenes;
     animation-iteration-count: infinite;
-    background-image: url("assets/sol.gif");
+    background-image: url("../assets/sol.gif");
     background-size: 100%; }
   .main__parrafo {
     text-align: center;
