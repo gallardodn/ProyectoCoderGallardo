@@ -1,0 +1,36 @@
+/* Definiciones del Footer */
+.footer{
+    grid-area: Pie;
+    display: flex;
+    justify-content: $ctr;
+    width:100%; 
+    padding-top: 5px;
+    padding-bottom: 5px;
+    background-color: blue;
+    font-family: Roboto;
+    text-align: $ctr;
+    &__titulo{
+        display: inline-block;
+        color: gold;
+        margin-right: 35px;
+    }
+    &__nav{
+        display: inline-block;
+    }
+    &__lista{
+        @extend .footer__nav;
+        list-style-type: none;
+        justify-content:$ctr;
+    }
+    &__item{
+        @extend .footer__nav;
+        padding-left: 20px;
+        padding-right: 20px;
+    }
+    &__btm{
+        font-size: small;
+        text-decoration: none;
+        color: white;
+    }
+
+}

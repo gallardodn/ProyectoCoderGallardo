@@ -1,0 +1,19 @@
+body{
+    display: grid;
+    height: 100vh;
+    grid-template-columns: 15% 1fr;
+    grid-template-rows: auto 1fr auto;
+    grid-template-areas: "Cabecera Cabecera"
+                         "Medio Medio"
+                         "Pie Pie";
+}
+/*Hago un Body con Grid distinto para la pagina Productos, para agregar menu lateral */
+.body__productos{
+    display: grid;
+    height: 100vh;
+    grid-template-columns: 15% 1fr;
+    grid-template-rows: auto 1fr auto;
+    grid-template-areas: "Cabecera Cabecera"
+                         "Nav Medio"
+                         "Pie Pie";
+}

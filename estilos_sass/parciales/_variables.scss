@@ -1,0 +1,21 @@
+/* Creo una variable ctr para resumir los centrados */
+$ctr: center;
+
+/* creo un mapa de estilos para utilizar en varias secciones */
+$parrafo: (
+    aliniacion:$ctr,
+    martop: 20px,
+    marbottom: 20px,
+    marleft: 5%,
+    marright: 5%,
+);
+
+
+
+/* creo un mixin para los formatos de texto */
+@mixin fuentes-margen($tamano, $orientacion, $margentop, $margenbot){
+font-size:$tamano;
+text-align: $orientacion;
+margin-top: $margentop;
+margin-bottom: $margenbot;
+}
