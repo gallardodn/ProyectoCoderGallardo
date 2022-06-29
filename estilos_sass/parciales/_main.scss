@@ -1,9 +1,28 @@
 /* Definon el color de fondo para el menu de la tienda */
 .nav__categorias{
     grid-area: Nav;
-    background-image: linear-gradient(white, blue);
+    display: flex;
+    align-items:baseline;
+    justify-content:left;
+    background-color: #E0DECA;
+}
+.nav__catlist{
+    display: flex;
+    flex-flow: column nowrap;
+    align-items:baseline;
+    justify-content:$ctr;
+    list-style: none;
+}
+.nav__catitm{
+    padding: 10px;
+}
+.nav__catlink{
+    text-decoration: none;
+    color: #2a2627;
 }
 .main__titulo1--margen{
+    color:dimgray;
+    text-shadow: #2a2627 2px 2px 4px;
     @include fuentes-margen(7vmin,$ctr,80px,50px);
 }
 
@@ -26,21 +45,30 @@ $animacion: (
     grid-area: Medio;
     justify-content: $ctr;
     font-family: Roboto;
-    background-image: linear-gradient(white, blue);
+    background-color:#C7D36F;
     overflow-y: auto;
     &__titulo1{
+        color:dimgray;
+        text-shadow: #2a2627 2px 2px 4px;
         @include fuentes-margen(5vw,$ctr,50px,50px);
     }
     &__titulo2{
+        color:dimgray;
+        text-shadow: #2a2627 2px 2px 4px;
         @include fuentes-margen(4vw,$ctr,50px,50px);
     }
     &__subtitulo{
         text-align: $ctr;
-        color: white;
+        color:darkslategray;
+        text-shadow: #2a2627 2px 2px 4px;
         margin-bottom: 30px;
         margin-inline: 70px;
     }
     /* Animacion de Imagen Hero */
+    &__img--parrafo{
+        display: block;
+        margin: 15px auto 40px;
+    }
     &__img{
         margin-bottom: 50px;
         height: 279px;
@@ -53,6 +81,7 @@ $animacion: (
         background-size: 100%;
     }
     &__parrafo{
+        color: darkslategray;
         text-align:map-get($parrafo, aliniacion);
         margin-top: map-get($parrafo, martop );
         margin-bottom: map-get($parrafo, marbottom);

@@ -27,36 +27,64 @@ body {
 
 /* Defino el estilo del Header y en Nav */
 header {
-  background-color: white;
-  grid-area: Cabecera; }
-  header .header__nav {
+  width: 100%;
+  grid-area: Cabecera;
+  align-items: center;
+  justify-content: center; }
+
+.header {
+  background-color: #FCF9C6;
+  display: flex;
+  flex-flow: row wrap; }
+  .header__img {
     display: flex;
-    flex-flow: row nowrap;
+    margin: auto; }
+  .header .header__nav {
+    display: flex;
     justify-content: center;
     align-items: center;
     list-style: none;
     font-size: 0; }
-    header .header__nav .header__lista {
-      display: flex;
+    .header .header__nav .header__lista {
+      display: inline-block;
       justify-content: center;
       align-items: center;
       flex-flow: row wrap; }
-      header .header__nav .header__lista .header__btm {
+      .header .header__nav .header__lista .header__btm {
         font-family: Lobster;
         font-size: 2rem;
         text-decoration: none;
         color: black;
         padding: 21px; }
-      header .header__nav .header__lista .header__btm:hover {
+      .header .header__nav .header__lista .header__btm:hover {
         background-color: black;
         color: white; }
 
 /* Definon el color de fondo para el menu de la tienda */
 .nav__categorias {
   grid-area: Nav;
-  background-image: linear-gradient(white, blue); }
+  display: flex;
+  align-items: baseline;
+  justify-content: left;
+  background-color: #E0DECA; }
+
+.nav__catlist {
+  display: flex;
+  flex-flow: column nowrap;
+  align-items: baseline;
+  justify-content: center;
+  list-style: none; }
+
+.nav__catitm {
+  padding: 10px; }
+
+.nav__catlink {
+  text-decoration: none;
+  color: #2a2627; }
 
 .main__titulo1--margen {
+  color: dimgray;
+  text-shadow: #2a2627 2px 2px 4px;
   font-size: 7vmin;
   text-align: center;
   margin-top: 80px;
@@ -79,24 +107,32 @@ header {
   grid-area: Medio;
   justify-content: center;
   font-family: Roboto;
-  background-image: linear-gradient(white, blue);
+  background-color: #C7D36F;
   overflow-y: auto;
   /* Animacion de Imagen Hero */ }
   .main__titulo1 {
+    color: dimgray;
+    text-shadow: #2a2627 2px 2px 4px;
     font-size: 5vw;
     text-align: center;
     margin-top: 50px;
     margin-bottom: 50px; }
   .main__titulo2 {
+    color: dimgray;
+    text-shadow: #2a2627 2px 2px 4px;
     font-size: 4vw;
     text-align: center;
     margin-top: 50px;
     margin-bottom: 50px; }
   .main__subtitulo {
     text-align: center;
-    color: white;
+    color: darkslategray;
+    text-shadow: #2a2627 2px 2px 4px;
     margin-bottom: 30px;
     margin-inline: 70px; }
+  .main__img--parrafo {
+    display: block;
+    margin: 15px auto 40px; }
   .main__img {
     margin-bottom: 50px;
     height: 279px;
@@ -108,6 +144,7 @@ header {
     background-image: url("../assets/sol.gif");
     background-size: 100%; }
   .main__parrafo {
+    color: darkslategray;
     text-align: center;
     margin-top: 20px;
     margin-bottom: 20px;
@@ -164,7 +201,7 @@ header {
   width: 100%;
   padding-top: 5px;
   padding-bottom: 5px;
-  background-color: blue;
+  background-color: #9EB23B;
   font-family: Roboto;
   text-align: center; }
   .footer__titulo {
